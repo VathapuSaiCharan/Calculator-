@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/5f59ca6ad3.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <div class="container-bg">
+        <nav class="navel">
+            <div toggle>
+                <i class="fa-thin fa-list-ul img"></i>
+            </div>
+        </nav>
+        <h1 class="heading"> EMI Calculator</h1>
+        <div class="containerel">
+            <div>
+                <div class="container mt-3">
+                    <label id="label1" class="labelin"> Principle Amount </label>
+                    <input for="label1" type="number" placeholder="ex.89576..." class="input-class" id="Principle" /> <span id="spanel"> </span>
+                </div>
+                <div class="container">
+                    <label id="label2" class="labelin"> Rate Of Interest </label>
+                    <input for="label2" type="number" placeholder="ex.12%" class="input-class" id="intrestrate" /> <span id="spanel1"> </span>
+                </div>
+                <div class="container">
+                    <label id="label3" class="labelin"> duration In Months </label>
+                    <input for="label3" type="number" placeholder="ex.12" class="input-class" id="duration" /> <span id="spanel2"> </span>
+                </div>
+                <button class="btnc" onclick="calculate()"> Calculate </button>
+                <button class="btnd " onclick="clear()" id="clear"> Clear</button>
+            </div>
+            <p class="Emiamount">Emi Per Month : <span id="emiamount"></span> </p>
+            <p class="Emiamount">Intrest Amount : <span id="intrest"></span> </p>
+            <p class="Emiamount">Total Amount : <span id="totalamount"></span> </p>
+        </div>
+    </div>
+</body>
+
+</html>
